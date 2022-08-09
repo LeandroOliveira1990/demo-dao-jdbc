@@ -4,6 +4,8 @@
  */
 package demo.dao.jdbc;
 
+import model.entities.Department;
+
 /**
  *
  * @author Leandro
@@ -15,6 +17,10 @@ public class DemoDaoJdbc {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Department obj = new Department(1, "Books");
+        
+        System.out.println(obj);
     }
     
 }
