@@ -22,11 +22,9 @@ public class DemoDaoJdbc {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Department obj = new Department(1, "Books");
-        
-        Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.0, obj);
-        
         SellerDao sellerdao = DaoFactory.createSellerDao();
+        
+        Seller seller = sellerdao.findById(3);
         
         System.out.println(seller);
     }

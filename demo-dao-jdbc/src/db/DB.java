@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package db;
 
 import java.io.FileInputStream;
@@ -9,9 +13,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
+/**
+ *
+ * @author Leandro
+ */
 public class DB {
-
-	private static Connection conn = null;
+    
+private static Connection conn = null;
 	
 	public static Connection getConnection() {
 		if (conn == null) {
@@ -68,3 +76,6 @@ public class DB {
 		}
 	}
 }
+
+    
+
